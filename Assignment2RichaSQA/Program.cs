@@ -69,7 +69,12 @@ namespace Assignment2RichaSQA
 
                         if (formType.Equals("y") || formType.Equals("Y"))
                         {
-                            TriangleSolver.Analyze(side1ForTriangle,side2ForTriangle,side3ForTriangle);
+                            
+                            TriangleSolver.Side1ForTriangle = side1ForTriangle;
+                            TriangleSolver.Side2ForTriangle = side2ForTriangle;
+                            TriangleSolver.Side3ForTriangle = side3ForTriangle;
+
+                            TriangleSolver.Analyze(side1ForTriangle, side2ForTriangle, side3ForTriangle);
                         }
                         else if (formType.Equals("n") || formType.Equals("N")) { Console.WriteLine("These are not sides of triangle"); break; }
                     } while (!formType.Equals("y") && !formType.Equals("n") && !formType.Equals("Y") && !formType.Equals("N"));
