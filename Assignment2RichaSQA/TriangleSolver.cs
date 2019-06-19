@@ -15,7 +15,20 @@ namespace Assignment2RichaSQA
         public static void Analyze(int side1ForTriangle, int side2ForTriangle, int side3ForTriangle)
         {
             
-            
+            if ((side1ForTriangle == side2ForTriangle) && (side2ForTriangle == side3ForTriangle))
+            {
+                Console.WriteLine("Triangle is equilateral.");
+            }
+
+            else if (side1ForTriangle == side2ForTriangle || side2ForTriangle == side3ForTriangle || side1ForTriangle == side3ForTriangle)
+            {
+                Console.WriteLine("Triangle is isosceles.");
+            }
+
+            else
+            {
+                Console.WriteLine("Triangle is scalene.");
+            }
 
         }
 
