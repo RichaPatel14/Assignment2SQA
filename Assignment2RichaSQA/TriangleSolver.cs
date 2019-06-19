@@ -14,20 +14,8 @@ namespace Assignment2RichaSQA
 
         public static void Analyze(int side1ForTriangle, int side2ForTriangle, int side3ForTriangle)
         {
-            if ((side1ForTriangle == side2ForTriangle) && (side2ForTriangle == side3ForTriangle))
-            {
-                //break;
-            }
-
-            else if (side1ForTriangle == side2ForTriangle || side2ForTriangle == side3ForTriangle || side1ForTriangle == side3ForTriangle)
-            {
-               // break;
-            }
-
-            else
-            {
-             //   break;
-            }
+            
+            
 
         }
 
