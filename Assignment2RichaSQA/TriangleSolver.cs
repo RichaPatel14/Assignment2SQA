@@ -23,13 +23,6 @@ namespace Assignment2RichaSQA
         public static int Side2ForTriangle { get => side2ForTriangle; set => side2ForTriangle = value; }
         public static int Side3ForTriangle { get => side3ForTriangle; set => side3ForTriangle = value; }
 
-        //int[] values = new int[3] { side1ForTriangle, side2ForTriangle, side3ForTriangle };
-        //public static TringleType GetAnalyze(int side1ForTriangle, int side2ForTriangle, int side3ForTriangle) { 
-        //    if(side1ForTriangle<=0 || side2ForTriangle<=0 || side3ForTriangle <= 0)
-        //        {
-        //            return TringleType.Error;
-        //        }
-        //}
         public static string Analyze(int side1ForTriangle, int side2ForTriangle, int side3ForTriangle)
         {
              String hello = "your";
