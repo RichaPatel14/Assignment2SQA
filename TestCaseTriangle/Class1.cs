@@ -20,7 +20,7 @@ namespace TestCaseTriangle
             String side = TriangleSolver.Analyze(side1, side2, side3);
             StringAssert.Contains(name,side);
         }
-        //// TEST CASE FOR POSITIVE VALUE OF SIDES FOR EQUILATERAL
+        // TEST CASE FOR POSITIVE VALUE OF SIDES FOR EQUILATERAL
         [Test]
         public void TestCase_Equilateral()
         {
@@ -33,7 +33,7 @@ namespace TestCaseTriangle
         [Test]
         public void TestCase_Isosceles()
         {
-            double side1 = 3, side2 = 3, side3 = 7;
+            double side1 = 3, side2 = 5, side3 = 3;
             String name = "isosceles";
             String side = TriangleSolver.Analyze(side1, side2, side3);
             StringAssert.Contains(name, side);
@@ -79,7 +79,7 @@ namespace TestCaseTriangle
         [Test]
         public void TestCase_Side()
         {
-            double side1 = 0, side2 = 0, side3 = 0;
+            double side1 = 1, side2 =3 , side3 = 25;
             String name = "incorrect";
             String side = TriangleSolver.Analyze(side1, side2, side3);
             StringAssert.Contains(name, side);

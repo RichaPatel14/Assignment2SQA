@@ -22,47 +22,51 @@ namespace Assignment2RichaSQA
         //CREATE METHOD THAT FETCH VALUES OF SIDES FROM PROGRAM CLASS
         public static string Analyze(double side1ForTriangle, double side2ForTriangle, double side3ForTriangle)
         {
-            
+
             String hello = "Your ";
 
             //CHECKS LENGTH OF SIDES ARE LESS THAN ZERO OR NOT
-            
+
             if (side1ForTriangle < 0 || side2ForTriangle < 0 || side3ForTriangle < 0)
             {
                 hello = hello + "input is invalid";
             }
 
-            //CHECKS SUM OF TWO SIDS ARE GREATER THAN THIRD SIDE
-            //VALID FORM OF TRIANGLE
-            if (side1ForTriangle + side2ForTriangle > side3ForTriangle || side1ForTriangle + side3ForTriangle > side2ForTriangle || side2ForTriangle + side3ForTriangle > side1ForTriangle)
+            if (side1ForTriangle > 0 && side2ForTriangle > 0 && side3ForTriangle > 0)
             {
-                // CHECKS ALL SIDES ARE SAME
-                //TRIANGLE IS FORM OF EQUILATERAL
-                if ((side1ForTriangle == side2ForTriangle) && (side2ForTriangle == side3ForTriangle))
+                //CHECKS SUM OF TWO SIDS ARE GREATER THAN THIRD SIDE
+                //VALID FORM OF TRIANGLE
+                if (side1ForTriangle + side2ForTriangle > side3ForTriangle && side1ForTriangle + side3ForTriangle > side2ForTriangle && side2ForTriangle + side3ForTriangle > side1ForTriangle)
                 {
-                    Console.WriteLine("Triangle sides: {0} x {1} x {2}", Side1ForTriangle, Side2ForTriangle, Side3ForTriangle);
-                    hello = hello + "Triangle is equilateral.";
-                }
+                    // CHECKS ALL SIDES ARE SAME
+                    //TRIANGLE IS FORM OF EQUILATERAL
+                    if ((side1ForTriangle == side2ForTriangle) && (side2ForTriangle == side3ForTriangle))
+                    {
+                        Console.WriteLine("Triangle sides: {0} x {1} x {2}", Side1ForTriangle, Side2ForTriangle, Side3ForTriangle);
+                        hello = hello + "Triangle is equilateral.";
+                    }
 
-                // CHECKS ANY TWO SIDES ARE SAME
-                //TRIANGLE IS FORM OF ISOSCELES
-                else if (side1ForTriangle == side2ForTriangle || side2ForTriangle == side3ForTriangle || side1ForTriangle == side3ForTriangle)
-                {
-                    Console.WriteLine("Triangle sides: {0} x {1} x {2}", Side1ForTriangle, Side2ForTriangle, Side3ForTriangle);
-                    hello = hello + "Triangle is isosceles.";
-                }
+                    // CHECKS ANY TWO SIDES ARE SAME
+                    //TRIANGLE IS FORM OF ISOSCELES
+                    else if (side1ForTriangle == side2ForTriangle || side2ForTriangle == side3ForTriangle || side1ForTriangle == side3ForTriangle)
+                    {
+                        Console.WriteLine("Triangle sides: {0} x {1} x {2}", Side1ForTriangle, Side2ForTriangle, Side3ForTriangle);
+                        hello = hello + "Triangle is isosceles.";
+                    }
 
-                //CHECK ALL SIDES ARE NOT SAME
-                //TRIANGLE IS FORM OF SCALENE
-                else
-                {
-                    Console.WriteLine("Triangle sides: {0} x {1} x {2}", Side1ForTriangle, Side2ForTriangle, Side3ForTriangle);
-                    hello = hello + "Triangle is scalene.";
+                    //CHECK ALL SIDES ARE NOT SAME
+                    //TRIANGLE IS FORM OF SCALENE
+                    else
+                    {
+                        Console.WriteLine("Triangle sides: {0} x {1} x {2}", Side1ForTriangle, Side2ForTriangle, Side3ForTriangle);
+                        hello = hello + "Triangle is scalene.";
+                    }
                 }
+                // CHECK SUM OF ANY TWO SIDE IS NOT GREATER THAN THIRD SIDE
+                //INVALID FORM OF TRIANGLE
+                else { hello = hello + "Triangle is in incorrect form"; }
+               
             }
-            // CHECK SUM OF ANY TWO SIDE IS NOT GREATER THAN THIRD SIDE
-            //INVALID FORM OF TRIANGLE
-            else { hello = hello + "Triangle is in incorrect form"; }
             return hello;
         }
     }
