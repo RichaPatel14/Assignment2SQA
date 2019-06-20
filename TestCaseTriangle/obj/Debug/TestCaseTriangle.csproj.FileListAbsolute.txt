@@ -1,0 +1,12 @@
+D:\SQA\Assignment2RichaSQA\TestCaseTriangle\bin\Debug\TestCaseTriangle.dll
+D:\SQA\Assignment2RichaSQA\TestCaseTriangle\bin\Debug\TestCaseTriangle.pdb
+D:\SQA\Assignment2RichaSQA\TestCaseTriangle\bin\Debug\Assignment2RichaSQA.exe
+D:\SQA\Assignment2RichaSQA\TestCaseTriangle\bin\Debug\nunit.framework.dll
+D:\SQA\Assignment2RichaSQA\TestCaseTriangle\bin\Debug\Assignment2RichaSQA.pdb
+D:\SQA\Assignment2RichaSQA\TestCaseTriangle\bin\Debug\Assignment2RichaSQA.exe.config
+D:\SQA\Assignment2RichaSQA\TestCaseTriangle\bin\Debug\nunit.framework.xml
+D:\SQA\Assignment2RichaSQA\TestCaseTriangle\obj\Debug\TestCaseTriangle.csprojAssemblyReference.cache
+D:\SQA\Assignment2RichaSQA\TestCaseTriangle\obj\Debug\TestCaseTriangle.csproj.CoreCompileInputs.cache
+D:\SQA\Assignment2RichaSQA\TestCaseTriangle\obj\Debug\TestCaseTriangle.csproj.CopyComplete
+D:\SQA\Assignment2RichaSQA\TestCaseTriangle\obj\Debug\TestCaseTriangle.dll
+D:\SQA\Assignment2RichaSQA\TestCaseTriangle\obj\Debug\TestCaseTriangle.pdb
