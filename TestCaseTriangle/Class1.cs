@@ -11,6 +11,7 @@ namespace TestCaseTriangle
     [TestFixture]
     public class Class1
     {
+        // TEST CASE FOR POSITIVE VALUE OF SIDES FOR SCALENE
         [Test]       
         public void TestCase_Scalene()
         {
@@ -19,7 +20,7 @@ namespace TestCaseTriangle
             String side = TriangleSolver.Analyze(side1, side2, side3);
             StringAssert.Contains(name,side);
         }
-
+        //// TEST CASE FOR POSITIVE VALUE OF SIDES FOR EQUILATERAL
         [Test]
         public void TestCase_Equilateral()
         {
@@ -28,7 +29,7 @@ namespace TestCaseTriangle
             String side = TriangleSolver.Analyze(side1, side2, side3);
             StringAssert.Contains(name, side);
         }
-
+        //// TEST CASE FOR POSITIVE VALUE OF SIDES FOR ISOSCELES
         [Test]
         public void TestCase_Isosceles()
         {
@@ -37,7 +38,7 @@ namespace TestCaseTriangle
             String side = TriangleSolver.Analyze(side1, side2, side3);
             StringAssert.Contains(name, side);
         }
-
+        //// TEST CASE FOR NEGATIVE VALUE OF SIDES FOR EQUILATERAL
         [Test]
         public void TestCase_EquilateralNagative()
         {
@@ -46,7 +47,7 @@ namespace TestCaseTriangle
             String side = TriangleSolver.Analyze(side1, side2, side3);
             StringAssert.Contains(name, side);
         }
-
+        //TEST CASE FOR NEGATIVE VALUE OF SIDES FOR SCALENE
         [Test]
         public void TestCase_ScaleneNagative()
         {
@@ -55,7 +56,7 @@ namespace TestCaseTriangle
             String side = TriangleSolver.Analyze(side1, side2, side3);
             StringAssert.Contains(name, side);
         }
-
+        // TEST CASE FOR NEGATIVE VALUE OF SIDES FOR ISOSCELES
         [Test]
         public void TestCase_IsoscelesNagative()
         {
@@ -64,7 +65,7 @@ namespace TestCaseTriangle
             String side = TriangleSolver.Analyze(side1, side2, side3);
             StringAssert.Contains(name, side);
         }
-
+        // TEST CASE FOR NEGATIVE VALUE OF SIDES
         [Test]
         public void TestCase_Error()
         {
@@ -73,7 +74,8 @@ namespace TestCaseTriangle
             String side = TriangleSolver.Analyze(side1, side2, side3);
             StringAssert.Contains(name, side);
         }
-
+        // TEST CASE FOR SUM OF TWO SIDE IS GREATER THAN THIRD SIDE
+        // TEST CASE FOR CHECK FORM OF TRIANGLE
         [Test]
         public void TestCase_Side()
         {
