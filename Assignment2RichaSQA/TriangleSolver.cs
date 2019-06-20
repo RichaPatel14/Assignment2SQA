@@ -8,7 +8,7 @@ namespace Assignment2RichaSQA
 {
     public static class TriangleSolver
     {
-        // SET ATTRIBUTE BY DEFALT
+        // SET ATTRIBUTE BY DEFAULT
         private static double side1ForTriangle = 1;
         private static double side2ForTriangle = 1;
         private static double side3ForTriangle = 1;
